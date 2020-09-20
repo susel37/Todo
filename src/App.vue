@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Input />
+    <TaskHolder />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Input from '@/components/Input.vue'
+import TaskHolder from '@/components/TaskHolder.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Input, TaskHolder
   }
 }
 </script>
 
 <style>
+body {
+  background-color: rgb(49, 199, 149);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +28,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
 }
 </style>
